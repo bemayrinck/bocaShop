@@ -1,0 +1,375 @@
+/* Square Stick  SquareService*/
+
+.contentSquareStick {
+    display: flex;
+    flex-direction: row;
+}
+
+.squareStick {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.square {
+    background-color: #FF711E;
+    width: 23px;
+    height: 23px;
+}
+
+.stick{
+    background-color: #FF711E;
+    height: 7px;
+    width: 577px;
+}
+
+.serviceSquare {
+    height: 298px;
+    width: 298px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px -9px #000 ; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 25px;
+}
+
+/* Edição navbar */
+#navBar .row {
+    display: flex;
+    flex-direction: row;
+    height: 85px;
+    width: 100%;
+    box-shadow:0px 0px 22px -10px;
+    margin: 0;
+}
+
+#navBar .col-md-4  {
+    padding : 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#navBar .col-md-4:nth-child(3) {
+    justify-content: flex-end;
+}
+
+.navBarList {
+    width: 100%;
+}
+
+.navBarList ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.navBarList ul li{
+    list-style-type:none;
+}
+
+.navBarList ul li a:hover {
+    text-decoration: none;
+    color: #FF711E;
+
+}
+
+.navBarList ul li a {
+    color: black;
+}
+
+.imageLogoBoca {
+    padding-left: 35px;
+}
+
+.buttonNavBar {
+    width: 460px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF711E;
+    border-radius: 0px 0px 0px 30px;
+    font-family: 'Khand', sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.buttonNavBar:hover {
+    color:#fff;
+    text-decoration: none;
+
+}
+
+/* Edição section "presentation" */
+#presentation {
+    height: 180vh;
+    width: 100%;
+    background-image: url("../images/bgPresentation.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#presentation h1 {
+    margin-left: 165px;
+    font-size: 180px;
+    line-height: 95%;
+    width: 200px;
+}
+
+#presentation h2 {
+    margin-left: 25px;
+    color: #FF711E;
+    font-family: 'Khand', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    width: 25%;
+}
+
+#presentation img {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#presentation .contentSquareStick {
+    align-items: flex-start;
+}
+
+#presentation .squareStick {
+    margin-top: 10px;
+}
+
+.allignTextPresentation {
+    display: flex;
+    flex-direction: column;
+    padding-top: 240px;
+}
+
+#presentation .stick{
+    width: 127px;
+}
+
+/* Edição section "services"*/
+
+.titleServices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+    width: 100%;
+    position: relative;
+}
+
+#services .squareStick {
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+
+.titleServices h3{
+    font-size: 78px;
+}
+
+.servicesVideo {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.servicesVideo img{
+    width: 1228px;
+    height: 644px;
+    position: relative;
+    z-index: -1;
+}
+
+.servicesVideo iframe{
+    margin-top: 50px;
+    position: absolute;
+}
+
+.textVideo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:100px;
+
+
+}
+
+.textVideo .square{
+    
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 17px;
+    height: 17px;
+}
+.textVideo p {
+    font-family: 'Khand', sans-serif;
+    font-weight: 400;
+    font-size: 44px;
+    width: 75%;
+}
+
+.services {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.services img {
+    width: 232px;
+    height: 232px;
+    margin-top: -30px;
+}
+
+.services p {
+    font-family: 'Khand', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* Edição section Buy */
+
+#buyNow {
+    margin-top: 200px;
+    display: flex;
+}
+
+#buyNow .col-md-8 {
+    position: relative;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#buyNow .stick {
+    width: 1230px;
+}
+.imageBuy {
+    width: 980px;
+    height: 640px;
+    margin-left: 100px;
+    position: absolute;
+}
+
+.imageBuy img {
+    width: 100%;
+    height: 100%;
+}
+
+.imageBuy img:nth-child(2){
+    position: absolute;
+    left: 70px;
+    top: 70px;
+}
+
+.buyButton {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buyButton img {
+    height: 200px;
+    width: 400px;
+}
+
+.buyButton button {
+    margin-top: 30px;
+    border-radius: 10px;
+    height: 60px;
+    width: 260px;
+    font-family: 'Khand', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+/* Edição section Contact */
+
+#contact {
+    margin-top: 200px;
+}
+
+#contact .container {
+    display: flex;
+    flex-direction: row;
+}
+
+.boxContactForm {
+    box-shadow: 0px 0px 20px -9px #000;
+    padding: 50px;
+    border-radius: 20px;
+    width: 100%;
+    height: 665px;
+
+}
+.boxContactForm input {
+    margin-bottom: 35px;
+    border-radius:  0px 10px 10px 10px;
+    border: none;
+    background-color: #EFEFEF;
+    height: 40px;
+    padding-left: 5px;
+}
+
+.boxContactForm input:focus {
+    outline: none;
+}
+
+.boxContactForm textarea {
+    margin-bottom: 35px;
+    border-radius:  0px 10px 10px 10px;
+    border: none;
+    background-color: #EFEFEF;
+    min-height: 150px;
+    height: 100%;
+    padding-left: 5px;
+    resize: none;
+}
+
+.contactForm h2 {
+    font-size: 73px;
+}
+
+.contactForm form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .col-md-6:nth-child(2) {
+    width: 100%;
+}
+
+.cellphone, .cellphone img {
+    width: 300px;
+    height: 600px;
+    object-fit: contain;
+}
+
+/* Edição footer */
+
+#footer {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Khand', sans-serif;
+    font-weight: 400;
+    font-size: 29px;
+    color: #9F9F9F;
+
+}
