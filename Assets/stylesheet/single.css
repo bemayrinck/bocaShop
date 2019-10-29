@@ -371,5 +371,44 @@
     font-weight: 400;
     font-size: 29px;
     color: #9F9F9F;
+}
 
+/* Contact Us */
+.height-container .row {
+    width: 100%;
+}
+
+#joinUsFull .col-md-6 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+#joinUsFull .contactForm {
+    width: 80%;
+    z-index: 1;
+}
+
+#joinUsFull .boxContactForm {
+    box-shadow: 0px 0px 20px -9px #000;
+    padding: 50px;
+    border-radius: 20px;
+    width: 100%;
+    height: 600px;
+}
+
+#joinUsFull .squareStick {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+
+
+.height-container {
+    height: calc(100vh - 85px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
