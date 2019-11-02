@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="Assets/stylesheet/single.css" />
     <link rel="stylesheet" href="Assets/stylesheet/animate.min.css">
     <link rel="stylesheet" href="Assets/stylesheet/bootstrap.min.css">
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="Assets/stylesheet/owl.carousel.min.css">
+    <link rel="stylesheet" href="Assets/stylesheet/owl.theme.default.min.css">
 
     <link href="https://fonts.googleapis.com/css?family=Khand:400,700&display=swap" rel="stylesheet">
     
@@ -21,7 +21,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="imageLogoBoca">
-                    <img src="Assets/images/logoBoca.png" alt="logoboca">
+                    <a href="single.html"><img  src="Assets/images/logoBoca.png" alt="logoboca"></a>
                 </div>
             </div>
 
@@ -45,7 +45,7 @@
             </div>
 
             <div class="col-md-4">
-                <a href="" class="buttonNavBar">JUNTE-SE A NÓS</a>
+                <a href="contactUs.html" class="buttonNavBar">JUNTE-SE A NÓS</a>
             </div>
         </div>
     </header>
@@ -144,6 +144,22 @@
                 </div>
             </div>
     </section>
+    <section id= "partners">
+        <div class="allignItensPartners">
+            <div class="squareStick">
+                <div class="stick"></div>
+                <div class="square"></div>
+            </div>
+            <h3>parceiros</h3>
+        </div>
+        <div class="owl-carousel">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+    </section>
     <section id="buyNow">
             <div class="col-md-8">
                 <div class="squareStick">
@@ -198,5 +214,27 @@
     <script src="Assets/javascript/bootstrap.min.js"></script>
     <script src="Assets/javascript/jquery-1.12.0.min.js"></script>
     <script src="Assets/javascript/jquery-ui.min.js"></script>
+    <script src="Assets/javascript/owl.carousel.min.js"></script>
 </body>
 </html>
+
+<script>
+    $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+    });
+</script>
