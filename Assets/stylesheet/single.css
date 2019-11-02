@@ -200,17 +200,15 @@
     flex-direction: row;
     justify-content: center;
     margin-top:100px;
-
-
 }
 
 .textVideo .square{
-    
     margin-top: 20px;
     margin-right: 10px;
     width: 17px;
     height: 17px;
 }
+
 .textVideo p {
     font-family: 'Khand', sans-serif;
     font-weight: 400;
@@ -309,6 +307,8 @@
 #buyNow {
     padding-top: 200px;
     display: flex;
+    height: 100vh;
+    margin-bottom: 200px;
 }
 
 #buyNow .col-md-8 {
@@ -322,6 +322,7 @@
 #buyNow .stick {
     width: 1230px;
 }
+
 .imageBuy {
     width: 980px;
     height: 640px;
@@ -366,12 +367,17 @@
 /* Edição section Contact */
 
 #contact {
-    margin-top: 200px;
+    margin: auto;  
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
 }
 
-#contact .container {
+#contact .row {
+    width: 90%;
+    margin: auto;
     display: flex;
-    flex-direction: row;
+    align-items: center;
 }
 
 .boxContactForm {
@@ -379,9 +385,8 @@
     padding: 50px;
     border-radius: 20px;
     width: 100%;
-    height: 665px;
-
 }
+
 .boxContactForm input {
     margin-bottom: 35px;
     border-radius:  0px 20px 20px 20px;
@@ -389,6 +394,7 @@
     background-color: #EFEFEF;
     height: 40px;
     padding-left: 10px;
+    width: 100%;
 }
 
 .boxContactForm input:focus {
@@ -405,6 +411,7 @@
     padding-left: 10px;
     padding-top: 10px;
     resize: none;
+    width: 100%;
 }
 
 .boxContactForm textarea:focus {
@@ -413,21 +420,51 @@
 
 .contactForm h2 {
     font-size: 73px;
+    font-family: 'Khand', sans-serif;
+    font-weight: 400;
 }
 
 .contactForm form {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+}
+
+.contactForm input[type="submit"] {
+    border-radius: 20px 0px 20px 20px;
+    border: 2px solid #FF711E;
+    color: #FF711E;
+    font-family: 'Khand', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 0;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100px;
 }
 
 #contact .col-md-6:nth-child(2) {
     width: 100%;
+    position: relative;
 }
 
-.cellphone, .cellphone img {
-    width: 300px;
-    height: 600px;
+#contact img {
+    width: 730px;
+    height: 1140px;
     object-fit: contain;
+    margin-top: -100px;
+}
+
+#contact .squareStick {
+    position: absolute;
+    right: 0;
+    top: 175px;
+    z-index: -1;
+}
+
+#contact .stick {
+    width: 1000px;
 }
 
 /* Edição footer */
