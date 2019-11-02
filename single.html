@@ -149,13 +149,36 @@
             </div>
             <h3>parceiros</h3>
         </div>
-        <div class="owl-carousel">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
+        <div class="container-fluid">
+            <div class="owl-carousel">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+        </div>
+    </section>
+    <section id="musics">
+        <div class="allignItensMusics">
+            <h3>musicas</h3>
+            <div class="squareStick">
+                <div class="square"></div>
+                <div class="stick"></div>
+            </div>
+        </div>
+        <div class="container-fluid">
+                <div class="owl-carousel-2 owl-theme">
+                    <div class="item-video" data-merge="3"><a class="owl-video" href="https://vimeo.com/23924346"></a></div>
+                    <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=JpxsRwnRwCQ"></a></div>
+                    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=FBu_jxT1PkA"></a></div>
+                    <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=oy18DJwy5lI"></a></div>
+                    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=H3jLkJrhHKQ"></a></div>
+                    <div class="item-video" data-merge="3"><a class="owl-video" href="https://www.youtube.com/watch?v=g3J4VxWIM6s"></a></div>
+                    <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=0fhoIate4qI"></a></div>
+                    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=EF_kj2ojZaE"></a></div>
+                </div>
+            </div>
     </section>
     <section id="buyNow">
             <div class="col-md-8">
@@ -214,22 +237,40 @@
     <script src="Assets/javascript/owl.carousel.min.js"></script>
 </body>
 </html>
+
+
 <script>
     $(document).ready(function(){
         $('.owl-carousel').owlCarousel({
-    loop:true,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
-    })
+            loop:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        })
+        $('.owl-carousel-2').owlCarousel({
+            items:1,
+            merge:true,
+            loop:true,
+            margin:10,
+            video:true,
+            lazyLoad:true,
+            center:true,
+            responsive:{
+                480:{
+                    items:2
+                },
+                600:{
+                    items:4
+                }
+            }
+        })
     });
 </script>

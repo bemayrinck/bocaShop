@@ -263,13 +263,46 @@
     font-weight: normal;
 
 }
+
  .circle {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     background-color: grey;
-    margin-left: 20px;
+    margin : auto;
 }
+
+.owl-nav {
+    display: block !important;
+    text-align: center;
+    font-size: 75px;
+    color: #FF711E;
+}
+
+.owl-nav span {
+    margin: 0px 20px;
+}
+
+/* Edição section Musics */
+#musics {
+    height: 600px;
+}
+#musics .stick {
+    width: 175px;
+}
+
+.allignItensMusics {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.allignItensMusics h3 {
+    margin-right: 30px;
+    font-size: 78px;
+    font-family: 'Khand', sans-serif;
+    font-weight: normal;
+}
+
 
 /* Edição section Buy */
 
