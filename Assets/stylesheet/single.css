@@ -239,7 +239,9 @@
 }
 
 /* Edição section partners */
-
+#partners {
+    height: 500px;
+}
 #partners .stick {
     width: 175px;
 }
