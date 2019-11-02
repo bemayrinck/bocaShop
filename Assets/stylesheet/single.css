@@ -241,7 +241,9 @@
 }
 
 /* Edição section partners */
-
+#partners {
+    height: 500px;
+}
 #partners .stick {
     width: 175px;
 }
@@ -272,7 +274,7 @@
 /* Edição section Buy */
 
 #buyNow {
-    margin-top: 200px;
+    padding-top: 200px;
     display: flex;
 }
 
@@ -449,3 +451,6 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+
+/* Edição carrousel de fotos */
