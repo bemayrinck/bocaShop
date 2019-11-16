@@ -100,7 +100,7 @@
                         </button>
                     </div>
                     <div class="col-10 col-md-3">
-                        <div class="serviceSquare">
+                        <button type="button" class="serviceSquare" data-toggle="modal" data-target="#modal1">
                             <img src="Assets/images/2.png" alt="">
                             <p>GERENCIAMENTO DE CAMPANHAS</p>
                         </button>
@@ -278,42 +278,3 @@
     <script src="Assets/javascript/owl.carousel.min.js"></script>
 </body>
 </html>
-
-
-<script>
-    $(document).ready(function(){
-        $('.owl-carousel').owlCarousel({
-            loop:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:3
-                },
-                1000:{
-                    items:5
-                }
-            }
-        })
-        $('.owl-carousel-2').owlCarousel({
-            items:1,
-            merge:true,
-            loop:true,
-            margin:10,
-            video:true,
-            lazyLoad:true,
-            center:true,
-            responsive:{
-                480:{
-                    items:2
-                },
-                600:{
-                    items:4
-                }
-            }
-        })
-    $('#modal1').modal();
-    });
-</script>
-
