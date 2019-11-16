@@ -1,4 +1,4 @@
-/* Square Stick  SquareService*/
+/* Componentes */
 
 .contentSquareStick {
     display: flex;
@@ -33,6 +33,17 @@
     justify-content: center;
     align-items: center;
     padding: 30px 25px;
+    background-color: transparent;
+    border: none;
+}
+
+.serviceSquare:focus {
+    outline: none;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: row;
 }
 
 /* Edição navbar */
