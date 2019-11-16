@@ -17,42 +17,46 @@
     
 </head>
 <body>
-    <header id= "navBar">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="imageLogoBoca">
-                    <a href="single.html"><img  src="Assets/images/logoBoca.png" alt="logoboca"></a>
+    <header id="navbar">
+        <nav class="navbar navbar-expand-lg">
+                
+            <a href="single.html" class="navbar-brand">
+                <img src="Assets/images/logoBoca.png" alt="logoboca">
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <img src="Assets/images/hamburger.png" alt="logoboca">
+                </span>
+            </button>
+            
+            <div class="collapse navbar-collapse navBarList" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#services">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#musics">Músicas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#buyNow">BocaShop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a> 
+                    </li>   
+                </ul>
+                <div class="btnContactUsMobile">
+                    <a href="contactUs.html">Junte-se a nos</a>
                 </div>
             </div>
-
-            <div class="col-md-4">
-                <div class="navBarList">
-                    <ul>
-                        <li>
-                            <a href="#services">Serviços</a>
-                        </li>
-                        <li>
-                            <a href="#musics">Músicas</a>
-                        </li>
-                        <li>
-                            <a href="#buyNow">BocaShop</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contato</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <a href="contactUs.html" class="buttonNavBar">JUNTE-SE A NÓS</a>
-            </div>
-        </div>
+    
+            <a href="contactUs.html" class="buttonNavBar">JUNTE-SE A NÓS</a>
+        </nav>
     </header>
 
     <section id="presentation">
         <div class="presentationText">
-            <div class="allignTextPresentation">
+            <div class="alignTextPresentation">
                 <h1>ORIGINAL BOCA</h1>
                 <div class="contentSquareStick">
                     <div class="squareStick">
@@ -76,7 +80,8 @@
         </div>
         <div class="servicesVideo">
             <img src="Assets/images/Padrão Laranja.png" alt="">
-            <iframe width="1104" height="622" src="https://www.youtube.com/embed/HxKHlmqS9ao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="1104" height="622" class="videoDesktop" src="https://www.youtube.com/embed/HxKHlmqS9ao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="300" height="240" class="videoMobile" src="https://www.youtube.com/embed/HxKHlmqS9ao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="textVideo">
             <div class="square"></div>
@@ -85,61 +90,60 @@
                 soluções em  tecnologia e ampla experiência no mercado audiovisual para promover
                 resultados em larga escala digital e física.</p>
         </div>
-            <div class="services">
+        <div class="services">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-10 col-md-3">
                         <button type="button" class="serviceSquare" data-toggle="modal" data-target="#modal1">
                             <img src="Assets/images/1.png" alt="">
                             <p>APOIO ESTRATÉGICO DE LANÇAMENTO</p>
                         </button>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-10 col-md-3">
                         <div class="serviceSquare">
                             <img src="Assets/images/2.png" alt="">
                             <p>GERENCIAMENTO DE CAMPANHAS</p>
                         </div>
                     </div>
-                    <div class="col-md-3">  
+                    <div class="col-10 col-md-3">  
                         <div class="serviceSquare">
                             <img src="Assets/images/3.png" alt="">
                             <p>APOIO PRODUÇÃO AUDIOVISUAL</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-10 col-md-3">
                         <div class="serviceSquare">
                             <img src="Assets/images/4.png" alt="">
                             <p>MATERIAL P/ REDES SOCIAIS</p>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-10 col-md-3">
                         <div class="serviceSquare">
                             <img src="Assets/images/5.png" alt="">
                             <p>ENSAIO FOTOGRÁFICO</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-10 col-md-3">
                         <div class="serviceSquare">
                             <img src="Assets/images/6.png" alt="">
                             <p>PRESSKIT</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-10 col-md-3">
                         <div class="serviceSquare">
                             <img src="Assets/images/7.png" alt="">
                             <p>DESTAQUE DE LANÇAMENTO</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-10 col-md-3">
                         <div class="serviceSquare">
                             <img src="Assets/images/8.png" alt="">
                             <p>AUXÍLIO EM REGISTRO DE OBRAS</p>
                         </div>
                     </div>
                 </div>
-                </div>
             </div>
+        </div>
     </section>
     <section id= "partners">
         <div class="allignItensPartners">

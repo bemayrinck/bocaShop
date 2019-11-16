@@ -23,49 +23,22 @@
     width: 577px;
 }
 
-.serviceSquare {
-    height: 298px;
-    width: 298px;
-    border-radius: 50px;
-    box-shadow: 0px 0px 20px -9px #000 ; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 25px;
-    background-color: transparent;
-    border: none;
-}
-
-.serviceSquare:focus {
-    outline: none;
-}
-
 .modal-body {
     display: flex;
     flex-direction: row;
 }
 
 /* Edição navbar */
-#navBar .row {
-    display: flex;
-    flex-direction: row;
+#navbar .navbar {
     height: 85px;
     width: 100%;
     box-shadow:0px 0px 22px -10px;
     margin: 0;
+    padding: 0;
 }
 
-#navBar .col-md-4  {
-    padding : 0;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-#navBar .col-md-4:nth-child(3) {
-    justify-content: flex-end;
+#navbar .collapse {
+    justify-content: center;
 }
 
 .navBarList {
@@ -78,20 +51,38 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0;
+    max-width: 500px;
+    width: 100%;
 }
 
-.navBarList ul li{
+.navBarList ul li {
     list-style-type:none;
+}
+
+.navBarList ul li a {
+    color: black;
+    font-family: 'Khand', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .navBarList ul li a:hover {
     text-decoration: none;
     color: #FF711E;
-
 }
 
-.navBarList ul li a {
-    color: black;
+.navBarList ul li a::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #D2D2D2;
+    text-align: center;
 }
 
 .imageLogoBoca {
@@ -115,7 +106,57 @@
 .buttonNavBar:hover {
     color:#fff;
     text-decoration: none;
+}
 
+.btnContactUsMobile {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        height: 100%;
+    }
+    .navbar-brand img {
+        height: 100%;
+        object-fit: contain;
+    }
+    .navBarList ul {
+        flex-direction: column;
+    }
+    .buttonNavBar {
+        display: none;
+    }
+    .navbar-collapse {
+        background-color: #FF711E;
+        z-index: 999;
+    }
+    .navBarList ul li a {
+        color: #fff;
+    }
+    .navBarList ul li a::after {
+        display: none;
+    }
+    .btnContactUsMobile {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btnContactUsMobile a {
+        color: #fff;
+        font-family: 'Khand', sans-serif;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .navbar-toggler:focus {
+        outline: none;
+    }
+    .navbar-toggler-icon img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
 }
 
 /* Edição section "presentation" */
@@ -158,7 +199,7 @@
     margin-top: 10px;
 }
 
-.allignTextPresentation {
+.alignTextPresentation {
     display: flex;
     flex-direction: column;
     padding-top: 240px;
@@ -166,6 +207,38 @@
 
 #presentation .stick{
     width: 127px;
+}
+
+@media screen and (max-width: 767px) {
+    #presentation {
+        height: calc(100vh - 85px);
+    }
+    #presentation img {
+        display: none;
+    }
+    .presentationText {
+        height: 100%;
+    }
+    .alignTextPresentation {
+        padding: 0;
+        height: 100%;
+        justify-content: center;
+    }
+    #presentation .squareStick {
+        display: none;
+    }
+    #presentation h1 {
+        margin-left: 0px;
+        font-size: 64px;
+        width: auto;
+        text-align: center;
+    }
+    #presentation h2 {
+        width: fit-content;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 0;
+    }
 }
 
 /* Edição section "services"*/
@@ -184,7 +257,9 @@
     height: 100%;
 }
 
-.titleServices h3{
+.titleServices h3 {
+    font-family: 'Khand', sans-serif;
+    font-weight: 400;
     font-size: 78px;
 }
 
@@ -199,6 +274,10 @@
     height: 644px;
     position: relative;
     z-index: -1;
+}
+
+.videoMobile {
+    display: none;
 }
 
 .servicesVideo iframe{
@@ -237,8 +316,8 @@
 }
 
 .services img {
-    width: 232px;
-    height: 232px;
+    width: 200px;
+    height: 200px;
     margin-top: -30px;
 }
 
@@ -247,6 +326,61 @@
     font-weight: bold;
     font-size: 25px;
     text-align: center;
+}
+
+.serviceSquare {
+    height: 250px;
+    width: 100%;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px -9px #000 ; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 25px;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.serviceSquare:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 767px) {
+    #services .squareStick {
+        display: none;
+    }
+    .titleServices {
+        padding-top: 30px;
+    }
+    .titleServices h3 {
+        font-size: 56px;
+        line-height: 70px;
+        text-align: center;
+        width: 80%;
+    }
+    .videoDesktop {
+        display: none;
+    }
+    .videoMobile {
+        display: block;
+    }
+    .servicesVideo iframe {
+        margin-top: 20px;
+    }
+    .servicesVideo img {
+        width: 340px;
+        height: 250px;
+        object-fit: cover;
+    }
+    .textVideo p {
+        font-size: 22px;
+        margin-bottom: 80px;
+    }
+    .col-10 {
+        margin: auto;
+    }
 }
 
 /* Edição section partners */
