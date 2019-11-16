@@ -94,10 +94,10 @@
                         </button>
                     </div>
                     <div class="col-md-3">
-                        <div class="serviceSquare">
+                        <button type="button" class="serviceSquare" data-toggle="modal" data-target="#modal2">
                             <img src="Assets/images/2.png" alt="">
                             <p>GERENCIAMENTO DE CAMPANHAS</p>
-                        </div>
+                        </button>
                     </div>
                     <div class="col-md-3">  
                         <div class="serviceSquare">
@@ -228,19 +228,39 @@
     </footer>
 
     <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="ModalLabel">APOIO ESTRATÉGICO DE LANÇAMENTO</h5>
+            
+            <div  id = "modalCostumize" class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                 <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <img src="Assets/images/1.png" alt="">
-                <p>Envolve fazer todo planejamento, buscando as melhores datas com 
-                        objetivo de obter os melhores resultados, tendo a possibilidade
-                        de entrar em grandes playlists. 
+                <div class="alignItensModal">
+                    <h4>APOIO ESTRATÉGICO DE LANÇAMENTO :</h4>
+                    <p>Envolve fazer todo planejamento, buscando as melhores datas com 
+                            objetivo de obter os melhores resultados, tendo a possibilidade
+                            de entrar em grandes playlists.
+                </div>
+                </p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ModalLabel">GERENCIAMENTO DE CAMPANHAS</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="Assets/images/2.png" alt="">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
                 </p>
             </div>
             </div>
