@@ -23,6 +23,10 @@
     width: 577px;
 }
 
+.modal-content {
+    border-radius: 60px !important;
+}
+
 .modal-body {
     display: flex;
     flex-direction: row;
@@ -30,25 +34,50 @@
     align-items: center;
 }
 
+.modal-body h4 {
+    font-family: 'Khand', sans-serif;
+    font-weight: normal;
+    font-size: 50px;
+}
+
 .modal-body p {
     font-family: 'Khand', sans-serif;
     font-weight: normal;
     font-size: 44px;
-
 }
 
 .modal-body img {
     width: 372px;
     height: 372px;
     margin-top: -30px;
+    object-fit: contain;
 }
-#modalCostumize .modal-header {
-    border-bottom:  none;
+.modal-header {
+    border-bottom:  0 !important;
 }
 
 .alignItensModal {
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (max-width: 991px) {
+    .modal-body {
+        flex-direction: column;
+    }
+    .modal-body img {
+        width: 250px;
+        height: 250px;
+        text-align: center;
+    }
+    .modal-body h4 {
+        font-size: 32px;
+        text-align: center; 
+    }
+    .modal-body p {
+        font-size: 24px;
+        text-align: center;
+    }
 }
 
 /* Edição navbar */
@@ -135,7 +164,7 @@
     display: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
     .navbar-brand {
         height: 100%;
     }
@@ -145,6 +174,7 @@
     }
     .navBarList ul {
         flex-direction: column;
+        margin: auto;
     }
     .buttonNavBar {
         display: none;
@@ -232,7 +262,7 @@
     width: 127px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
     #presentation {
         height: calc(100vh - 85px);
     }
@@ -259,8 +289,8 @@
     #presentation h2 {
         width: fit-content;
         text-align: center;
+        margin: auto;
         margin-top: 50px;
-        margin-left: 0;
     }
 }
 
@@ -370,7 +400,7 @@
     outline: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
     #services .squareStick {
         display: none;
     }
@@ -382,6 +412,9 @@
         line-height: 70px;
         text-align: center;
         width: 80%;
+    }
+    .services {
+        height: auto;
     }
     .videoDesktop {
         display: none;
@@ -427,7 +460,6 @@
     font-size: 78px;
     font-family: 'Khand', sans-serif;
     font-weight: normal;
-
 }
 
  .circle {
@@ -438,6 +470,16 @@
     margin : auto;
 }
 
+.owl-one.owl-drag .owl-item.center .circle {
+    height: 250px;
+    width: 250px;
+}
+
+.owl-one .owl-stage {
+    display: flex;
+    align-items: center;
+}
+
 .owl-nav {
     display: block !important;
     text-align: center;
@@ -445,8 +487,38 @@
     color: #FF711E;
 }
 
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background-color: transparent;
+    color: #FF711E;
+}
+
+.owl-theme .owl-nav [class*=owl-]:focus {
+    outline: none;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    margin: 0 !important;
+}
+
 .owl-nav span {
     margin: 0px 20px;
+}
+
+@media screen and (max-width: 991px) {
+    #partners {
+        height: auto;
+        margin: 50px 0;
+    }
+    #partners .squareStick {
+        display: none;
+    }
+    .allignItensPartners h3 {
+        font-size: 56px;
+        line-height: 70px;
+        text-align: center;
+        width: 100%;
+        margin-left: 0;
+    }
 }
 
 /* Edição section Musics */
@@ -460,6 +532,7 @@
 .allignItensMusics {
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 30px
 }
 
 .allignItensMusics h3 {
@@ -467,6 +540,34 @@
     font-size: 78px;
     font-family: 'Khand', sans-serif;
     font-weight: normal;
+}
+
+.owl-two .owl-item .item {
+    width: 95%;
+    height: 480px
+}
+
+@media screen and (max-width: 991px) {
+    #musics {
+        height: auto;
+    }
+    .allignItensMusics .squareStick {
+        display: none;
+    }
+    .allignItensMusics h3 {
+        font-size: 56px;
+        line-height: 70px;
+        text-align: center;
+        width: 100%;
+        margin-right: 0;
+    }
+    .owl-two .owl-item {
+        display: flex;
+        justify-content: center;
+    }
+    .owl-two .owl-item .item {
+        height: 250px;
+    }
 }
 
 
@@ -479,7 +580,7 @@
     margin-bottom: 200px;
 }
 
-#buyNow .col-md-8 {
+#buyNow .col-xl-8 {
     position: relative;
     padding-left: 0;
     display: flex;
@@ -531,6 +632,24 @@
     font-weight: bold;
     font-size: 32px;
 }
+
+@media screen and (max-width: 991px) {
+    #buyNow {
+        display: initial;
+        height: auto;
+    }
+    #buyNow .col-xl-8 {
+        display: none
+    }
+    .buyButton {
+        padding: 100px 0;
+    }
+    .buyButton img {
+        width: 90%;
+        height: auto;
+        object-fit: contain
+    }
+}   
 
 /* Edição section Contact */
 
@@ -635,6 +754,28 @@
     width: 1000px;
 }
 
+@media screen and (max-width: 991px) {
+    #contact {
+        height: auto;
+    }
+    #contact .squareStick  {
+        display: none
+    }
+    #contact img {
+        display: none;
+    }
+    .contactForm h2 {
+        text-align: center
+    }
+    #contact .row {
+        width: 100%;
+    }
+    .boxContactForm {
+        padding: 50px 20px;
+        margin-bottom: 30px;
+    }
+}
+
 /* Edição footer */
 
 #footer {
@@ -645,6 +786,15 @@
     font-weight: 400;
     font-size: 29px;
     color: #9F9F9F;
+}
+
+@media screen and (max-width: 991px) {
+    #footer p {
+        padding: 0 20px;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
 }
 
 /* Contact Us */
@@ -780,4 +930,51 @@
     margin: 0;
     background-color: transparent;
     cursor: pointer;    
+}
+
+@media screen and (max-width: 991px) {
+    #joinUsFull .squareStick  {
+        display: none
+    }
+    .height-container  {
+        height: initial;
+    }
+    .height-container .row {
+        width: initial;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    #joinUsFull .contactForm {
+        width: 100%;
+    }
+    #joinUsFull .boxContactForm {
+        padding: 50px 20px;
+        margin-bottom: 30px;
+    }
+    #joinUsFull .col-md-6 {
+        height: inherit;
+    }
+    .labelFile p {
+        font-size: 16px;
+    }
+    .fieldFile {
+        margin-bottom: 0
+    }
+    .alignbuttonform input[type="submit"] {
+        font-size: 16px;
+    }
+    #joinUsFull .col-md-6:nth-child(2) {
+        padding: 0;
+    }
+    .joinUs {
+        height: inherit;
+        width: inherit;
+        padding: 15px;
+    }
+    .joinUs h1 {
+        font-size: 32px;
+    }
+    .joinUs p {
+        font-size: 18px;
+    }
 }

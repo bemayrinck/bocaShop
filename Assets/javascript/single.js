@@ -1,36 +1,31 @@
-$(document).ready(function(){
-    $(document).ready(function(){
-        $('.owl-carousel').owlCarousel({
-            loop:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:3
-                },
-                1000:{
-                    items:5
-                }
-            }
-        })
-        $('.owl-carousel-2').owlCarousel({
-            items:1,
-            merge:true,
-            loop:true,
-            margin:10,
-            video:true,
-            lazyLoad:true,
-            center:true,
-            responsive:{
-                480:{
-                    items:2
-                },
-                600:{
-                    items:4
-                }
-            }
-        })
-    });
-    $('#modal1').modal('toggle')
+$('.owl-one').owlCarousel({
+    nav:true,
+    items: 1,
+    dots: false,
+    center: true,
+    loop: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        1000:{
+            items:5
+        }
+    }
 });
+$('.owl-two').owlCarousel({
+    items:1,
+    merge:true,
+    video:true,
+    lazyLoad:true,
+    dots: false,
+    loop: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        1000:{
+            items: 3
+        }
+    }
+})
